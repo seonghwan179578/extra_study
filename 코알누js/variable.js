@@ -13,7 +13,7 @@
 // console.log(color) // 에러 발생
 
 
-var password = "pink"
+var password = "pink" // var -> 변수 값 변경 가능
 password = "black"
 
-console.log(password)
+console.log(password) // 가장 마지막에 선언된 값인 black 출력
