@@ -129,4 +129,3 @@ function makeSet() { //
     serveCoke()
 }
 makeSet() // 3개의 함수 makeBurger, serveFrenchFries, serveCoke가 모두 실행되어 출력
-
