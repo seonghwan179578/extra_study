@@ -1,0 +1,37 @@
+body{
+    margin: 0px; /* body의 기본값인 margin 8px를 없애기 위한 코드. 좌우 여백을 완전히 제거 */
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none; /* a 태그에 직접적으로 스타일을 부여 => 모든 a태그의 기본값으로 설정. 태그마다 일일이 설정할 필요가 없는 장점*/
+}
+
+a:hover {
+    color: #1ed760;
+}
+
+nav {
+    height: 80px;
+    background-color: black;
+    display: flex; /* 기본값인 block(세로정렬)을 가로정렬 변경. 가로정렬 대상이 div 태그의 부모 태그이기 때문에 nav에 적용 */
+    justify-content: space-around; /* 가로정렬. space-between => 여백을 균등하게 정렬 */
+    align-items: center; /* 세로정렬. center : 가운데 맞춤 */
+}
+
+main{
+    height: 969px;
+   background-color: rgb(41, 65, 171);
+}
+
+footer {
+    height: 530px;
+    background-color: black;
+}
+
+.nav-item {
+    padding: 28px 17px;
+    font-weight: 700px; /* 폰트 두께 조절 */
+}
