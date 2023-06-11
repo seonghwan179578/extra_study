@@ -1,0 +1,37 @@
+.btn-outline-success{
+    color: #1c1c1c;
+    border-color: #1c1c1c;
+}
+
+.btn-outline-success:hover{
+    background-color: #1c1c1c;
+    color: white;
+    border-color: #1c1c1c;
+}
+
+.navbar navbar-expand-lg bg-body-tertiary{
+    background-color: #1c1c1c;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.first-line {
+    border-bottom: 1px solid #392d23;
+}
+
+.second-line a{ /* second-line이라는 스타일 아래에 a태그가 있으면 해당 태그에 본 스타일을 적용한다는 뜻 */
+    color: white;
+    text-decoration: none; /* 클릭해도 글자색 변화x, 밑줄 제거 */
+
+}
+
+/* 구분선 위의 LA SPORTIVA만 중앙정렬 */
+@media screen and (max-width:48rem) {
+    .first-line{
+        text-align: center;
+    }
+}
