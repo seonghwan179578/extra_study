@@ -54,3 +54,18 @@ footer {
         display: block;
     }
 }
+
+
+
+.first-img {
+    width: 100vw;
+  }
+
+  .flag {
+    display: none;
+    color: white;
+  }
+
+  .col {
+    padding-bottom: 1rem;
+  }
