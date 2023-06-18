@@ -42,10 +42,10 @@
 // console.log(i) // i가 for문에서 지역변수로 선언됐기 때문에, 블럭 밖에 있는 i는 지역변수에 접근 불가
 //                // ReferenceError : i is not defined at ~(에러 위치)
 
-console.log(a)
-let a = 1
-console.log(a) // ReferenceError : Cannot access a'a before initialization
-               // 참조에러 : 치기화 전에 a에 접근할 수 없음
+ console.log(a)
+ let a = 1
+ console.log(a) // ReferenceError : Cannot access a'a before initialization
+                참조에러 : 치기화 전에 a에 접근할 수 없음
 
 // Temporal Death Zone(TDZ)
 // a가 호이스팅으로 기억된 건 알겠으나, a 선언문이 나오기 전까진 a에 접근할 수 없다

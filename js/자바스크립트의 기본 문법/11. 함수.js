@@ -33,12 +33,12 @@ function serveFrenchFries() {
 // 이 상태로 실행하면 함수가 실행되지 않는다
 // 함수를 '불러야' 실행된다
 // 이름 뒤에 괄호를 꼭 붙일 것!!
-// makeBurger() // makeBurger 함수 실행 -> 이하의 console.log 3개가 실행되어 출력
+// makeBurger() // makeBurger 함수 실행 -> 이하의 console.log 4개가 실행되어 출력
 // serveCoke() // serveCoke 함수 실행 -> 이하의 console.log 3개가 실행되어 출력
 
 
 
-// 함수 이름 뒤의 괄호에는 매개변수가 들어간다
+// 함수 이름 뒤의 소괄호에는 매개변수가 들어간다
 // function makeBurger(type) { // 함수는 모든 값을 type으로 받는다
 //     console.log("빵 두기")
 //     console.log("상추 두기")
