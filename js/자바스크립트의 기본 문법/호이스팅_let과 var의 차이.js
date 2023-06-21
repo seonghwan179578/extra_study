@@ -45,7 +45,7 @@
  console.log(a)
  let a = 1
  console.log(a) // ReferenceError : Cannot access a'a before initialization
-                참조에러 : 치기화 전에 a에 접근할 수 없음
+                // 참조에러 : 초기화 전에 a에 접근할 수 없음
 
 // Temporal Death Zone(TDZ)
 // a가 호이스팅으로 기억된 건 알겠으나, a 선언문이 나오기 전까진 a에 접근할 수 없다

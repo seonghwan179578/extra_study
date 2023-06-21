@@ -18,7 +18,7 @@ for(let i=0; i<= 10; i+=2) { // i가 2씩 증가
 
 
 
-// 구구단을 만들어보자
+// 구구단을 만들어보자(이중 for문)
 
 for(let i=2; i<=9;i++) {// 구구단은 2단부터 9단까지
                         // 2x5의 2에 해당하는 부분
@@ -26,4 +26,14 @@ for(let i=2; i<=9;i++) {// 구구단은 2단부터 9단까지
                               // 2x5의 5에 해당하는 부분
         console.log(i+'*'+j+'='+i*j)
     }
+}
+
+
+// 배열 활용
+
+let fruit = ["banana", "apple", "grape", "mango"]
+
+for(let i=0; i<fruit.length; i++) {
+                    // 배열의 길이 == 배열 안의 아이템 개수
+    console.log(fruit[i])
 }
