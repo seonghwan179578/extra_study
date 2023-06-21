@@ -11,6 +11,8 @@
 // console.log("감튀 담기")
 
 
+// -----------------------------------------------------
+
 
 // function makeBurger() {
 //     console.log("빵 두기")
@@ -83,7 +85,7 @@ function serveFrenchFries() {
 //     console.log(type,"버거", size,"사이즈", num,"개 준비 완료")
 //     return "완료 되었습니다"
 
-// makeBurger("불고기", "L", 3)
+// makeBurger("불고기", "L", 3)}
 // let result = makeBurger("불고기", "L", 3) // makeBurger라는 함수가 끝나고 나서 생긴 결과를 result 변수에 담음
 // console.log("버거 프로세스 결과",result) // 마지막에 리턴값으로 "버거 프로세스 결과 완료되었습니다" 까지 출력
  
