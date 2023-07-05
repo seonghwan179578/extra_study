@@ -56,7 +56,31 @@ console.log(nameValue, numValue) // undefined undefined 출력. 객체 안에 na
 // 기존 방식
 let name = "seonghwan"
 let age = 30
-console.log("제 이름은",name,
-"입니다. 제 나이는 "+age, "입니다.")
 
-console.log(`제 이릠은 name입니다. 제 나이는 age입니다`)
+console.log("제 이름은",name,
+"입니다. 제 나이는 ", age, "입니다.")
+
+// ES6 방식
+console.log(`제 이름은 ${name}입니다. 제 나이는 ${age} 입니다.`)
+
+
+
+
+
+// 4. 배열
+let array = [1, 2, 3]
+
+// 기존 방식
+// let a = array[0]
+// let b = array[1]
+// let c = array[2]
+// console.log(a, b, c)
+
+// 새로운 방식
+// let [a, b, c] = array
+// console.log(a,b,c)
+
+// a만 출력하는 방법
+let [a,...rest] = array
+
+console.log(a)
