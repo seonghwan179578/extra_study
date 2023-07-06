@@ -22,10 +22,10 @@
 // 2. 객체 분해
 
 
-let bts = {
-    name : "방탄소년단",
-    num : 7
-}
+// let bts = {
+//     name : "방탄소년단",
+//     num : 7
+// }
 // 기존 방식. 객체에 있는 값을 꺼내서 다시 변수로 만드는 방법
 // let name = bts.name
 // let num = bts.num
@@ -54,33 +54,75 @@ console.log(nameValue, numValue) // undefined undefined 출력. 객체 안에 na
 
 
 // 기존 방식
-let name = "seonghwan"
-let age = 30
+// let name = "seonghwan"
+// let age = 30
 
-console.log("제 이름은",name,
-"입니다. 제 나이는 ", age, "입니다.")
+// console.log("제 이름은",name,
+// "입니다. 제 나이는 ", age, "입니다.")
 
-// ES6 방식
-console.log(`제 이름은 ${name}입니다. 제 나이는 ${age} 입니다.`)
+// // ES6 방식
+// console.log(`제 이름은 ${name}입니다. 제 나이는 ${age} 입니다.`)
 
 
 
 
 
 // 4. 배열
-let array = [1, 2, 3]
+// let array = [1, 2, 3]
+
+// // 기존 방식
+// // let a = array[0]
+// // let b = array[1]
+// // let c = array[2]
+// // console.log(a, b, c)
+
+// // 새로운 방식
+// // let [a, b, c] = array
+// // console.log(a,b,c)
+
+// // a만 출력하는 방법
+// let [a,...rest] = array
+
+// console.log(a)
+// // a를 제외한 나머지를 출력하는 방법
+// console.log(rest)
+
+
+
+
+// 객체에서의 ... 활용
+let person = {
+    name : "seonghwan",
+    age : 29,
+    male : true
+}
+// name만 필요하고 나머지는 다시 객체로 이동
+let {name, ...restInfo} = person
+
+console.log(name, restInfo) // name만 변수로 빠져나오고 나머지 age, male은 객체에 포함된다
+
+
+
+// a, b, c 합치기
+let a = [1, 2]
+let b = [3, 4]
+let c = [5, 6]
+
+// ...을 이용하면 변수의 내용을 복사
+let result = [...a, ...b, ...c]
+console.log(result)
+
+
+
+
+// 새로운 함수 선언 방식
 
 // 기존 방식
-// let a = array[0]
-// let b = array[1]
-// let c = array[2]
-// console.log(a, b, c)
+function foo() {
+    return "haha"
+}
 
-// 새로운 방식
-// let [a, b, c] = array
-// console.log(a,b,c)
-
-// a만 출력하는 방법
-let [a,...rest] = array
-
-console.log(a)
+// ES6 방식. 변수 안에 함수를 넣어버림
+// 화살표(=>)가 function을 대체 
+let foo = ()=> "haha"
+console.log(foo())
