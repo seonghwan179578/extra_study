@@ -12,16 +12,23 @@
 //     console.log("there is no person")
 // }
 
+// let person = {
+//     name:"seonghwan",
+//     age:30
+// }
+
+// if(person) {
+//     console.log(person.name)
+// }else {
+//     console.log("there is no person")
+// }
+
+
+// console.log(person?person.name:"there is no person")
+
 let person = {
     name:"seonghwan",
     age:30
 }
-
-if(person) {
-    console.log(person.name)
-}else {
-    console.log("there is no person")
-}
-
 
 console.log(person?person.name:"there is no person")
